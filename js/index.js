@@ -87,3 +87,21 @@ document.querySelector('.content-pick').addEventListener('dblclick', function(ev
 window.addEventListener('load', () => {
     alert('Welcome!!!');
   });
+
+const headerFourAnimation = document.querySelector('.content-pick');
+
+headerFourAnimation.addEventListener('mousedown', function(event){
+    console.log(event);
+    if(event.target.localName === 'h4'){
+        event.target.style.color = 'red';
+    }
+    
+})
+
+headerFourAnimation.addEventListener('mouseup', function(event){
+    console.log(event);
+    if(event.target.localName === 'h4'){
+        event.target.style.color = 'black';
+    }
+    
+})
